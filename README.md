@@ -16,7 +16,7 @@ poetry env use $(pyenv which python)
 poetry install
 
 poetry add notebook ipykernel
-poetry run python -m ipykernel install --user --name=$(basename $PWD) --display-name "Python (earthquake-prediction-model)"
+poetry run python -m ipykernel install --user --name=$(basename $PWD) --display-name "Python (hypothesis-testing-kernel)"
 poetry run jupyter lab
 
 touch .gitignore
