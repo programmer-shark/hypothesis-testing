@@ -22,3 +22,22 @@ poetry run jupyter lab
 touch .gitignore
 
 poetry add jupyterlab-widgets for widgets to work
+
+MONGODB SETUP & IMPORT:
+=======================
+brew tap mongodb/brew
+brew install mongodb-community@6.0
+
+which mongod
+which mongoimport
+mongod --version
+mongoimport --version
+
+brew services start mongodb-community@6.0
+
+
+mongoimport --uri "mongodb://localhost:27017" \
+  --db abtest-db \
+  --collection ds-applicants \
+  --file ds_applicants.json \
+  --jsonArray
