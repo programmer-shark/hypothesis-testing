@@ -51,4 +51,16 @@ mongoimport --uri "mongodb://localhost:27017" \
   --jsonArray
 
 
+ASSIGNMENT DB:
+--------------
+mongoimport --uri "mongodb://localhost:27017" \
+  --db abtest-db \
+  --collection mscfe-applicants \
+  --file mscfe_applicants.json \
+  --jsonArray
 
+mongoimport --uri "mongodb://localhost:27017" \
+  --db abtest-db \
+  --collection mscfe-applicants-after-experiment \
+  --file mscfe_applicants_after_experiment.json \
+  --jsonArray
