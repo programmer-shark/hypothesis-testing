@@ -41,3 +41,14 @@ mongoimport --uri "mongodb://localhost:27017" \
   --collection ds-applicants \
   --file ds_applicants.json \
   --jsonArray
+
+
+After Experiment
+mongoimport --uri "mongodb://localhost:27017" \
+  --db abtest-db \
+  --collection ds-applicants-after-exp \
+  --file ds_applicants_after_experiment.json \
+  --jsonArray
+
+
+
